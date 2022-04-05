@@ -29,12 +29,24 @@
     </fieldset>
     
     <fieldset>
-        <label for="bycicle">Tipo de bicicleta:</label>
-    <select id="bycicle" name="bycicle">
-      <option value="volvo">Paseo</option>
-      <option value="saab">Montaña</option>
-      <option value="fiat">Carreras</option>      
-    </select>
+        <label for="type">Tipo de bicicleta:</label>
+        <select name="type" id="type">
+            <optgroup label="Paseo">
+                <option value="señorial">Señorial</option>
+                <option value="antiPlebeyos">Anti Plebeyos</option>
+                <option value="porEncimaDelHombro">Por encima del hombro</option>
+            </optgroup>
+            <optgroup label="Montaña">
+                <option value="gamusinos">Gamusinos</option>
+                <option value="hueleflores">Huele flores</option>
+                <option value="fango">Fango lover</option>
+            </optgroup>
+            <optgroup label="Carreras">
+                <option value="metroymedio">Metro y medio</option>
+                <option value="fluor">Fluorescente edition</option>
+                <option value="grupitors">Grupitors</option>
+            </optgroup>
+</select> 
     </fieldset>
     
     <fieldset>
@@ -48,13 +60,14 @@
               <option value="timbre">Timbre</option>
               <option value="foco">Foco</option>
             </select>
-            <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+            <p>Presiona la tecla Ctrl (windows) / Command (Mac) para seleccionar múltiples opciones.</p>
         </form>
     </fieldset>
 
     <fieldset>
         <form>
-            <input list="brand" name="brand">
+            <p>Selecciona una marca de bicicleta:</p>
+            <input list="brand" name="brand" placeholder="Marca bici">
             <datalist id="brand">
             <option value="Specialized">
             <option value="Trek">
