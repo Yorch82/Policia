@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Policia</title>
 </head>
 <body>
+    <h1>Los ladronzuelos de bicicletas</h1>
+
+    <fieldset>
+        <form>
+            <label for="day">Día del robo:</label>
+            <input type="date" id="day" name="day">
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+        </form>
+    </fieldset>
+    
+    <fieldset>
+        <form oninput="x.value=parseInt(vol.value)">
+            <label for="favcolor">Color de la bicicleta:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <label for="vol">Rango de precio (Entre 150 y 8000):</label>
+            <input type="range" id="vol" name="vol" min="150" max="8000">
+            <output name="x" for="vol"></output>
+        </form>
+    </fieldset>
+    
+    <fieldset>
+        <label for="bycicle">Tipo de bicicleta:</label>
+    <select id="bycicle" name="bycicle">
+      <option value="volvo">Paseo</option>
+      <option value="saab">Montaña</option>
+      <option value="fiat">Carreras</option>      
+    </select>
+    </fieldset>
+    
+    <fieldset>
+        <form>
+            <label for="Accesorios">Accesorios:</label>
+            <select id="Accesorios" name="Accesorios" size="4" multiple>
+              <option value="ruedines">Ruedines</option>
+              <option value="pegatinas">Pegatinas</option>
+              <option value="cestita">Cestita</option>
+              <option value="bombaaire">Bomba de aire</option>
+              <option value="timbre">Timbre</option>
+              <option value="foco">Foco</option>
+            </select>
+            <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <form>
+            <input list="brand" name="brand">
+            <datalist id="brand">
+            <option value="Specialized">
+            <option value="Trek">
+            <option value="Merida">
+            <option value="Scott">
+            <option value="Giant">
+            <option value="Cube">
+            <option value="Lapierre">
+            <option value="Orbea">
+            <option value="Cannondale">
+            <option value="Bmc">
+            <option value="Canyon">
+            <option value="Look">
+            <option value="Protek">
+            <option value="Megamo">
+            <option value="Pinarello">
+            <option value="Bianchi">
+            <option value="BH">
+            <option value="Factor">
+            <option value="Ghost">
+            <option value="Cervélo">
+            <option value="Argon">       
+              
+            </datalist>
+            
+          </form>
+          
+    </fieldset>
+    <input type="submit">
+    
+    
     
 </body>
 </html>
